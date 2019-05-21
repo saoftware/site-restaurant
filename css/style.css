@@ -1,0 +1,452 @@
+@@charset "UTF-8";
+
+/* font-family: 'Pathway Gothic One', sans-serif; */
+
+/* Bleu clair == #3498DB */
+/* Bleu foncé == #2C3E50 */
+
+/* marhe interieur et exterieur sur les balises body et html */ /* Police appliquée au corps de la page */
+body, html{
+	padding: 0;
+	margin: 0;
+	padding-top: 20px;
+	font-family: 'Pathway Gothic One', sans-serif;
+}
+
+/* Empecher que les liens soient soulignés par défaut */
+a, a:hover{
+	text-decoration: none;
+}
+
+/* Entête */
+.header{
+	background-color: #3498DB;
+	height: 70px;
+	line-height: 70px;
+}
+
+.logo{
+	float: left;
+	height: 40px;
+	margin-left: -18%;
+}
+
+.bout{
+	text-align: center;
+	margin-right: 5%;
+}
+
+.menu{
+	float: right;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 1px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.menu a{
+	color: #FFF5EE;
+	margin-left: 50px;
+}
+
+.menu a:hover{
+	color: maroon;
+}
+
+.container{
+	margin-right: 10px;
+}
+/* Session */
+.container-fluid{
+	padding: 0;
+}
+
+/* Bannière */
+.banner, .ban img{
+	width: 100%;
+	max-width: 100%;
+	border-radius: 3px;
+	box-shadow: 3px;
+}
+
+.inner-banner{
+	position: relative;
+	width: 100%;
+	text-align: center;
+	float: top;
+}
+
+.inner-banner h1{
+	color: #FF5E18;
+	font-family: Arial, 'BallparkWeiner', sans-serif;
+}
+
+.inner-banner h3{
+	color: #F0A87E;
+	text-shadow: 3px 3px 20px;
+	font-family: 'Trebuchet MS', 'BallparkWeiner', sans-serif;
+	font-size: 120%;
+}
+
+.inner-banner .btn-custom:hover{
+	background-color: #FFDAB9;
+}
+
+.footer p{
+	color: #fff;
+	text-align: center;
+}
+
+.pied{
+	width:100%;
+	padding:10px 18px;
+	box-shadow:0px 1px 1px rgba(0,0,0,0.15);
+	border-radius:3px;
+	background:#3498DB;
+}
+
+#contact{
+	color: #fff;
+	margin-top: 20%;
+}
+
+.form-horizontal{
+	width: 400px;
+	display: block;
+	margin: 0;
+}
+
+/* stack overflow, developper.com */
+
+input[type=text]{
+	height: 50px;
+	width: 500px;
+	border: none;
+}
+
+.test textarea{
+	width: 500px;
+	height: 100px;
+	resize: vertical;
+}
+
+.btn-custom{
+	background-color: maroon;
+	color: #000;	
+}
+
+.bouton{
+	margin-right:-15%;
+}
+
+/* 14. Page Title */
+
+.section-title h4 {
+	font-size: 40px;
+	text-transform: capitalize;
+	color: maroon;
+	position: relative;
+	display: inline-block;
+	padding-bottom: 25px;
+}
+
+.section-title p {
+	font-size: 24px;
+	font-family: Oleo Script;
+	margin-bottom: 0px;
+}
+
+.section-title h4:before,
+.section-title h4:after {
+	position: absolute;
+	content: "";
+	background-color: #FF5E18;
+}
+
+.section-title h4:before {
+	width: 80px;
+	height: 1.5px;
+	bottom: 0;
+	left: 50%;
+	margin-left: -40px;
+}
+
+.section-title h4:after {
+	width: 40px;
+	height: 1.5px;
+	bottom: -5px;
+	left: 50%;
+	margin-left: -20px;
+}
+
+.single_menu_list {
+	position: relative;
+	padding-left: 190px;
+	margin-bottom: 70px;
+	margin-top: 60px;
+}
+
+.single_menu_list img {
+	max-width: 30%;
+	position: absolute;
+	left: 0px;
+	top: 0;
+	border: 1px solid #ddd;
+	padding: 3px;
+	border-radius: 50%;
+	transition: .4s
+}
+
+.single_menu_list:hover img {
+	border-radius: 0;
+	transition: .4s
+}
+
+.single_menu_list h4 {
+	font-size: 20px;
+	border-bottom: 1px dashed #333;
+	padding-bottom: 15px;
+	margin-bottom: 10px;
+}
+
+.single_menu_list h4 span {
+	float: right;
+	font-weight: bold;
+	color: red;
+	font-style: italic;
+}
+
+
+/***
+	Rendre le site responsive
+***/
+
+@media(min-width: 150px) and (max-width: 992px){
+	body, html{
+		padding: 0;
+		margin: 0;
+		padding-top: 20px;
+		font-family: 'Pathway Gothic One', sans-serif;
+		min-width: 100px;
+		max-width: 500px;
+	}
+
+	/* Empecher que les liens soient soulignés par défaut */
+	a, a:hover{
+		text-decoration: none;
+	}
+
+	/* Entête */
+	.header{
+		background-color: #3498DB;
+		height: 100px;
+		line-height: 50px;
+		border-radius: 3px;
+		margin-top:-10%;
+		position: absolute;	
+	}
+
+	.logo{
+		position: absolute;	
+		float: left;
+		height: 3px;
+		margin-left: 0%;
+		margin-top: -10px;
+	}
+
+	.bout{
+		text-align: center;
+		margin-right: 5%;
+	}
+
+	.menu{
+		float: right;
+		text-transform: uppercase;
+		font-weight: bold;
+		letter-spacing: 1px;
+	}
+
+	.menu a{
+		color: #FFF5EE;
+		margin-left: 50px;
+	}
+
+	.menu a:hover{
+		color: maroon;
+	}
+
+	.container{
+		margin-right: 10px;
+	}
+	/* Session */
+	.container-fluid{
+		padding: 0;
+	}
+
+	/* Bannière */
+	.banner{
+		position: absolute;	
+		width: 100%;
+		max-width: 100%;
+		border-radius: 3px;
+		box-shadow: 3px;
+	}
+	
+	.ban img{
+		width: 100%;
+		max-width: 100%;
+		border-radius: 3px;
+		box-shadow: 3px;
+	}
+
+	.inner-banner{		
+		position: absolute;	
+		width: 100%;
+		text-align: center;
+	}
+
+	.inner-banner h1{
+		position: absolute;
+		color: #FF5E18;
+		font-family: Arial, 'BallparkWeiner', sans-serif;
+	}
+
+	.inner-banner h3{
+		position: absolute;
+		color: #F0A87E;
+		text-shadow: 3px 3px 20px;
+		font-family: 'Trebuchet MS', 'BallparkWeiner', sans-serif;
+		font-size: 120%;
+	}
+
+	.inner-banner .btn-custom:hover{
+		background-color: #FFDAB9;
+		position: absolute;
+	}
+
+	.footer p{
+		color: #fff;
+		text-align: center;
+		position: relative;
+	}
+
+	.pied{
+		width:100%;
+		padding:10px 18px;
+		box-shadow:0px 1px 1px rgba(0,0,0,0.15);
+		border-radius:3px;
+		background:#3498DB;
+	}
+
+	#contact{
+		color: #fff;
+		margin-top: 20%;
+	}
+
+	.form-horizontal{
+		width: 200px;
+		display: block;
+		margin: 0;
+	}
+
+	input[type=text]{
+		height: 50px;
+		width: 400px;
+		border: none;
+	}
+
+	.test textarea{
+		width: 400px;
+		height: 100px;
+		resize: vertical;
+	}
+
+	.btn-custom{
+		background-color: maroon;
+		color: #000;
+		position: relative;		
+	}
+
+	.bouton{
+		margin-right:-48%;
+	}
+
+	/* 14. Page Title */
+
+	.section-title h4 {
+		font-size: 40px;
+		text-transform: capitalize;
+		color: maroon;
+		position: relative;
+		display: inline-block;
+		padding-bottom: 25px;
+		margin-top : 40%;
+	}
+
+	.section-title p {
+		font-size: 24px;
+		font-family: Oleo Script;
+		margin-bottom: 0px;
+	}
+
+	.section-title h4:before,
+	.section-title h4:after {
+		position: absolute;
+		content: "";
+		background-color: #FF5E18;
+	}
+
+	.section-title h4:before {
+		width: 80px;
+		height: 1.5px;
+		bottom: 0;
+		left: 50%;
+		margin-left: -40px;
+	}
+
+	.section-title h4:after {
+		width: 40px;
+		height: 1.5px;
+		bottom: -5px;
+		left: 50%;
+		margin-left: -20px;
+	}
+
+	.single_menu_list {
+		position: relative;
+		padding-left: 190px;
+		margin-bottom: 70px;
+		margin-top: 60px;
+	}
+
+	.single_menu_list img {
+		max-width: 30%;
+		position: absolute;
+		left: 0px;
+		top: 0;
+		border: 1px solid #ddd;
+		padding: 3px;
+		border-radius: 50%;
+		transition: .4s
+	}
+
+	.single_menu_list:hover img {
+		border-radius: 0;
+		transition: .4s
+	}
+
+	.single_menu_list h4 {
+		font-size: 20px;
+		border-bottom: 1px dashed #333;
+		padding-bottom: 15px;
+		margin-bottom: 10px;
+	}
+
+	.single_menu_list h4 span {
+		float: right;
+		font-weight: bold;
+		color: red;
+		font-style: italic;
+	}
+}

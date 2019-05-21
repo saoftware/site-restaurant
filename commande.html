@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>  <!-- Indique au navigateur qu'il s'agit d'une page html -->
+<html>
+	<head>
+		<meta charset="utf-8">		
+		<!-- Le code css -->
+		<link rel="stylesheet" href="css/bootstrap.min.css"> 
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/slider.css">
+		<link rel="stylesheet" href="css/bootstrap.min.js"> 
+		<link rel="stylesheet" href="css/swiper.min.css">
+		<script src="css/swiper.min.js"></script>
+		<title> Restaurant </title> <!-- Le titre du site -->
+	</head>
+	
+	<body>		<!-- Début du corps du site -->
+		<header  class="container-fluid header">  <!-- Débbut de l'entête header   <img src="images/Entete/menu_gratuit.jpg" alt="Mon logo" title="Logo du site"/> -->
+			<div class="container">
+				<div class="logo">
+					<img src="images/logo/logo.png" alt="Logo">
+				</div>
+				<nav  class="menu" id="hautdepage">
+					<a href="index.html"> Accueil </a>
+					<a href="#menu"> Commande </a>	
+					<a href="#contact"> Contact </a>	
+				</nav>
+			</div>
+		</header> <!-- Fin de l'entête header -->
+		
+		<section class="container-fluid banner">	<!-- Début de banière -->
+			<div class="ban">
+				<!-- Swiper -->
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><img src="images/banniere/ban.jpg" alt="bannière du site 1" height="300px"></div>
+						<div class="swiper-slide"><img src="images/banniere/slide-1.jpg" alt="bannière du site 2" height="300px"></div>	
+						<div class="swiper-slide"><img src="images/banniere/blog-4.jpg" alt="bannière du site 3" height="300px"></div>
+						<div class="swiper-slide"><img src="images/banniere/page-bg.jpg" alt="bannière du site 4" height="300px"></div>		
+						<div class="swiper-slide"><img src="images/banniere/page-bread.jpg" alt="bannière du site 5" height="300px"></div>	
+						<div class="swiper-slide"><img src="images/banniere/blog-2.jpg" alt="bannière du site 6" height="300px"></div>		
+						<div class="swiper-slide"><img src="images/banniere/blog-5.jpg" alt="bannière du site 7" height="300px"></div>	
+						<div class="swiper-slide"><img src="images/banniere/about.jpg" alt="bannière du site 8" height="300px"></div>
+						<div class="swiper-slide"><img src="images/banniere/post.jpg" alt="bannière du site 9" height="300px"></div>	
+						<div class="swiper-slide"><img src="images/banniere/europe.jpg" alt="bannière du site 10" height="300px"></div>	
+					</div>					
+					<!-- Add Arrows -->
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+				</div>
+			</div>			
+		</section>	<!-- Fin de bannière -->
+		<section>
+			<hr class="horizontal" />
+			<div class="inner-banner">
+				<h3> Le restaurant client est roi </h3>
+				<h1> Bienvenu sur le site de  prestation de restaurants </h1>
+				<button class="btn btn-custom"><a href="#contact"> Contactez nous !!! </a></button>
+			</div>
+		</section>
+			
+		<hr class="horizontal" />
+		<section class="menu_list mt-60 mb-60">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-12">
+						<div class="section-title text-center mb-60">
+							<p id="menu">Les plats les plus commandés</p>
+							<h4>Commande</h4>
+						</div>
+					</div>
+				</div>           
+				<div class="row">
+					<div class="tab-content col-xl-12" id="myTabContent">
+						<div class="tab-pane fade show active" id="breakfast" role="tabpanel" aria-labelledby="breakfast-tab">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="single_menu_list">
+										<img src="images/plats africains/african.jpg" alt="" />
+										<div class="menu_content">
+											<h4>Tarif : <span>4000 F CFA</span></h4>
+											<p>Le menu le plus commandé du restaurant.</p>
+										</div>
+									</div>
+									<div class="single_menu_list">
+										<img src="images/plats africains/coucous.jpg" alt="" />
+										<div class="menu_content">
+											<h4>Tarif : <span>3000 F CFA</span></h4>
+											<p>Le meilleur coucous du marché à un tarif acceptable.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="single_menu_list">
+										<img src="images/plats africains/images.jpg" alt="" />
+										<div class="menu_content">
+											<h4>Tarif : <span>5000 F CFA</span></h4>
+											<p>Plat sur commande 30 mn avant la livraison.</p>
+										</div>
+									</div>
+									<div class="single_menu_list">
+										<img src="images/plats africains/maii.jpg" alt="" />
+										<div class="menu_content">
+											<h4>Tarif : <span>1500 F CFA</span></h4>
+											<p>Maï préparé avec ingrédiens.</p>
+										</div>
+									</div>									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<footer  class="container-fluid footer pied">	<!-- Début du pied de page -->
+			<div class="container">
+				<div class="row">				
+					<div class="col-sm-4">
+							<h2 id="contact"> Besoin d'aide </h2>
+							<hr>
+							<address>
+								<strong>Email:</strong> <a href="mailto:#"> example@domain.com</a><br><br>
+								<strong>Téléphone:</strong> (00226) 71-24-21-23
+							</address>
+							<p><a href="#hautdepage"> Haut de page </a>
+						</div>
+					<hr class="horizontal"/>
+					<div class="col-md-6 col-md-offset-3">
+						<div class="well well-sm">
+							<form class="form-horizontal" action="" method="post">
+								<fieldset>
+									<legend class="text-center">Envoyez un mail</legend>
+							
+									<!-- Name input-->
+									<div class="form-group">
+										<label class="col-md-3 control-label" for="name"> Nom </label>
+										<div class="col-md-9">
+											<input id="name" name="name" type="text" placeholder="Votre nom" class="form-control">
+										 </div>
+									</div>
+							
+									<!-- Email input-->
+									<div class="form-group">
+										<label class="col-md-3 control-label" for="email"> E-mail </label>
+										<div class="col-md-9">
+											<input id="email" name="email" type="text" placeholder="Votre email" class="form-control">
+										</div>
+									</div>							
+									<!-- Message body -->
+									<div class="form-group">
+										<label class="col-md-3 control-label" for="message"> Message </label>
+										<div class="col-md-9 test">
+											<textarea class="form-control" id="message" name="message" placeholder="S'il vous plait, entrez votre message ici..." rows="5"></textarea>
+										</div>
+									</div>							
+									<!-- Form actions -->
+									<div class="form-group bouton">
+										<div class="col-md-12 text-right">
+											<button type="submit" class="btn btn-custom btn-lg" style="float: right; margin-right: -3%"> Envoyer </button>
+										</div>
+									</div>
+								</fieldset>
+						  </form>
+						</div>
+					</div>					
+				</div>
+				<div class="page">
+					<p>
+						&copy; Copyrigth 2019, Tous droits réservés.
+					</p>
+				</div>
+			</div>
+		</footer>	<!-- Fin du pied de page -->
+		<!-- Initialize Swiper -->		  
+		<script>
+			var swiper = new Swiper('.swiper-container', {
+			  spaceBetween: 60,
+			  centeredSlides: true,
+			  autoplay: {
+				delay: 5000,
+				disableOnInteraction: false,
+			  },
+			  pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			  },
+			  navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			  },
+			});
+		</script>
+	</body> <!-- Fin du corps du site -->
+</html>

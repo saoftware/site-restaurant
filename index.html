@@ -1,0 +1,278 @@
+
+<!DOCTYPE html>  <!-- Indique au navigateur qu'il s'agit d'une page html -->
+
+<html>
+	<head>
+		<meta charset="utf-8">		
+		<!-- Le code css -->
+		<link rel="stylesheet" href="css/bootstrap.min.css"> 
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/slider.css">
+		<link rel="stylesheet" href="css/bootstrap.min.js"> 
+		<link rel="stylesheet" href="css/rating.css">
+		<link rel="stylesheet" href="css/swiper.min.css">
+		<script src="css/swiper.min.js"></script>
+		<title> Restaurant </title> <!-- Le titre du site -->
+	</head>
+	
+	<body>		<!-- Début du corps du site -->
+		<header  class="container-fluid header">  <!-- Débbut de l'entête header   <img src="images/Entete/menu_gratuit.jpg" alt="Mon logo" title="Logo du site"/> -->
+			<div class="container">
+				<div class="logo">
+					<img src="images/logo/logo.png" alt="Logo">
+				</div>				
+				<nav  class="menu" id="hautdepage">
+					<a href="#"> Accueil </a>
+					<a href="#menu"> Nos menus </a>	
+					<a href="commande.html"> Commande </a>
+					<a href="#contact"> Contact </a>
+				</nav>
+			</div>
+		</header> <!-- Fin de l'entête header -->
+		
+		<section class="container-fluid banner">	<!-- Début de banière -->			
+			<div class="ban">	
+				<div class="slider">
+					<!-- Swiper -->
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide"><img src="images/banniere/ban.jpg" alt="bannière du site 1" height="300px"></div>
+							<div class="swiper-slide"><img src="images/banniere/slide-1.jpg" alt="bannière du site 2" height="300px"></div>	
+							<div class="swiper-slide"><img src="images/banniere/blog-4.jpg" alt="bannière du site 3" height="300px"></div>
+							<div class="swiper-slide"><img src="images/banniere/page-bg.jpg" alt="bannière du site 4" height="300px"></div>		
+							<div class="swiper-slide"><img src="images/banniere/page-bread.jpg" alt="bannière du site 5" height="300px"></div>	
+							<div class="swiper-slide"><img src="images/banniere/blog-2.jpg" alt="bannière du site 6" height="300px"></div>		
+							<div class="swiper-slide"><img src="images/banniere/blog-5.jpg" alt="bannière du site 7" height="300px"></div>	
+							<div class="swiper-slide"><img src="images/banniere/about.jpg" alt="bannière du site 8" height="300px"></div>
+							<div class="swiper-slide"><img src="images/banniere/post.jpg" alt="bannière du site 9" height="300px"></div>	
+							<div class="swiper-slide"><img src="images/banniere/europe.jpg" alt="bannière du site 10" height="300px"></div>	
+						</div>
+						<!-- Add Arrows -->
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+					</div>
+				</div>				
+			</div>			
+		</section>	<!-- Fin de bannière -->
+		
+		<section>
+			<hr class="horizontal" />
+			<div class="inner-banner">
+				<h3> Le restaurant client est roi </h3>
+				<h1> Bienvenu sur le site de  prestation de restaurants </h1>
+				<button class="btn btn-custom"><a href="#contact"> Contactez nous </a></button>
+				<button class="btn btn-custom"><a href="commande.html"> Passer une commande </a></button>
+			</div>
+		</section>
+		
+		<hr class="horizontal" />
+		<section class="menu_list mt-60 mb-60">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-12">
+						<div class="section-title text-center mb-60">
+							<h4 id="menu">Menus du jour</h4>
+						</div>
+				   </div>
+				</div>           
+				<div class="row">
+					<div class="tab-content col-xl-12" id="myTabContent">
+						<div class="tab-pane fade show active" id="breakfast" role="tabpanel" aria-labelledby="breakfast-tab">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="single_menu_list">
+										<img src="images/menu/menu-1.jpg" alt="" />
+										<div class="menu_content"><br /><br />
+											<p>Le menu le plus commandé du restaurant.</p>
+											<div class="container">
+												<div class="row">
+													<div class="rating">Les avis des gens
+													  <input type="radio" id="star1" name="rating" value="1" /><label for="star5" title="Meh">étoile 1</label>
+													  <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">étoile 2</label>
+													  <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Kinda bad">étoile 3</label>
+													  <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Sucks big tim">étoile 4</label>
+													  <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Sucks big time">étoile 5</label>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="single_menu_list">
+										<img src="images/menu/menu-2.jpg" alt="" />
+										<div class="menu_content"><br /><br />
+											<p>Le meilleur coucous du marché à un tarif acceptable.</p>
+											<div class="container">
+												<div class="row">
+													<div class="rating">Les avis des gens
+													  <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Meh">5 stars</label>
+													  <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Kinda bad">4 stars</label>
+													  <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Kinda bad">3 stars</label>
+													  <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Sucks big tim">2 stars</label>
+													  <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="single_menu_list">
+										<img src="images/menu/menu-3.jpg" alt="" />
+										<div class="menu_content"><br /><br />
+											<p>Des frites au menu.</p>
+											<div class="container">
+												<div class="row">
+													<div class="rating">Les avis des gens
+													  <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Meh">5 stars</label>
+													  <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Kinda bad">4 stars</label>
+													  <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Kinda bad">3 stars</label>
+													  <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Sucks big tim">2 stars</label>
+													  <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="single_menu_list">
+										<img src="images/menu/menu-4.jpg" alt="" />
+										<div class="menu_content"><br /><br />
+											<p>Plat sur commande 30 mn avant la livraison.</p>
+											<div class="container">
+												<div class="row">
+													<div class="rating">Les avis des gens
+													  <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Meh">5 stars</label>
+													  <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Kinda bad">4 stars</label>
+													  <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Kinda bad">3 stars</label>
+													  <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Sucks big tim">2 stars</label>
+													  <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="single_menu_list">
+										<img src="images/menu/menu-5.jpg" alt="" />
+										<div class="menu_content"><br /><br />
+											<p>Maï préparé avec ingrédiens.</p>
+											<div class="container">
+												<div class="row">
+													<div class="rating">Les avis des gens
+													  <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Meh">5 stars</label>
+													  <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Kinda bad">4 stars</label>
+													  <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Kinda bad">3 stars</label>
+													  <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Sucks big tim">2 stars</label>
+													  <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="single_menu_list">
+										<img src="images/menu/menu-6.jpg" alt="" />
+										<div class="menu_content"><br /><br />
+											<p>Tarifs à porter de tous.</p>
+											<div class="container"> 
+												<div class="row">
+													<div class="rating">Les avis des gens  
+													  <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Meh">5 stars</label>
+													  <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Kinda bad">4 stars</label>
+													  <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Kinda bad">3 stars</label>
+													  <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Sucks big tim">2 stars</label>
+													  <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
+													</div>
+												</div>
+											</div>
+										</div>
+								   </div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<hr class="horizontal" />
+		<footer  class="container-fluid footer pied">	<!-- Début du pied de page -->
+			<div class="container">
+				<div class="row">				
+					<div class="col-sm-4">
+						<h2 id="contact"> Besoin d'aide </h2>
+						<hr class="horizontal" />
+						<address>
+							<strong>Email:</strong> <a href="mailto:#"> example@domain.com</a><br><br>
+							<strong>Téléphone:</strong> (00226) 71-24-21-23
+						</address>
+						<p><a href="#hautdepage"> Haut de page</a></p>
+					</div>					
+					<div class="col-md-6 col-md-offset-3">
+						<div class="well well-sm">
+							<form class="form-horizontal" action="" method="post">
+								<fieldset>
+									<div class="mail">
+										<legend class="text-center">Envoyez un mail</legend>
+								
+										<!-- Name input-->
+										<div class="form-group">
+											<label class="col-md-3 control-label" for="name"> Nom </label>
+											<div class="col-md-9">
+												<input id="name" name="name" type="text" placeholder="Votre nom" class="form-control">
+											 </div>
+										</div>
+								
+										<!-- Email input-->
+										<div class="form-group">
+											<label class="col-md-3 control-label" for="email"> E-mail </label>
+											<div class="col-md-9">
+												<input id="email" name="email" type="text" placeholder="Votre email" class="form-control">
+											</div>
+										</div>							
+										<!-- Message body -->
+										<div class="form-group">
+											<label class="col-md-3 control-label" for="message"> Message </label>
+											<div class="col-md-9 test">
+												<textarea class="form-control" id="message" name="message" placeholder="S'il vous plait, entrez votre message ici..." rows="5"></textarea>
+											</div>
+										</div>							
+										<!-- Form actions -->
+										<div class="form-group bouton">
+											<div class="col-md-12 text-right">
+												<button type="submit" class="btn btn-custom btn-lg" style="float: left"> Envoyer </button>
+												<button type="reset" class="btn btn-custom btn-lg bouton"> Annuler </button>
+											</div>
+										</div>
+									</div>
+								</fieldset>
+						  </form>
+						</div>
+					</div>					
+				</div>									
+				<div class="page">
+					<p>						
+						&copy; Copyrigth 2019, Tous droits réservés.
+					</p>
+				</div>
+			</div>
+		</footer>	<!-- Fin du pied de page -->
+		
+		<!-- Initialize Swiper -->		  
+		<script>
+			var swiper = new Swiper('.swiper-container', {
+			  spaceBetween: 60,
+			  centeredSlides: true,
+			  autoplay: {
+				delay: 5000,
+				disableOnInteraction: false,
+			  },
+			  pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			  },
+			  navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			  },
+			});
+		</script>
+	</body> <!-- Fin du corps du site -->
+</html>
